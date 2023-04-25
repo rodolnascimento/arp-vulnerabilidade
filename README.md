@@ -36,8 +36,8 @@ Eexecute o comando abaixo no *atacante*:
 nemesis arp -v -S <IP do pc2> -D <IP do pc1> -h <MAC do atacante> -m <MAC do pc1>
 ```
 
-6.  O resultado do ataque será vizualizado na tabela ARP, execute o seguinte comando no *pc1*: `arp -a`. 
-observe que este ataque não é permanente e que tem de repetir o comando acima periodicamente para a alteração permanecer pois a tabela arp é atualizada a cada 10 minutos.
+6.  O resultado do ataque será visualizado na tabela ARP, execute o seguinte comando no *pc1*: `arp -a`. 
+observe que este ataque não é permanente, o comando acima deve ser repetido periodicamente para a alteração permanecer pois a tabela arp é atualizada a cada 10 minutos.
 
 7.  Observe do resultado, execute o comando `tcpdump -e -i eth0` no *atacante* e no *pc2*.
 No *pc1*, execute o comando `ping <IP do pc2>` e observe que os pacotes enviados pelo comando *ping* são redirecionados para o *atacante*.
@@ -47,7 +47,7 @@ No *pc1*, execute o comando `ping <IP do pc2>` e observe que os pacotes enviados
 
 ## Referências
 
-- *Kathará*, [https://github.com/KatharaFramework/Kathara/wiki][3]
+- *Kathará*, [https://github.com/KatharaFramework/Kathara/wiki]
 
   [1]: media/image.png
 
